@@ -1,6 +1,6 @@
-import { Body, Controller, Delete, Get, Post, Put, Req, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Post, Put, Req, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from 'src/common/middleware/guards/jwt.guard';
-import { LoginValidationPipe } from 'src/common/middleware/login.validation.pipe';
+import { LoginValidationPipe } from 'src/common/middleware//pipes/login.validation.pipe';
 import { LoginDto } from './dto/login.user.dto';
 import { RegisterUserDto } from './dto/register.user.dto';
 import { UpdateUserDto } from './dto/update.user.dto';
